@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Martian_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { Footer, Header } from "@/components/layout";
 
 const martianMono = Martian_Mono({
   variable: "--font-martian-mono",
@@ -27,7 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${martianMono.variable} ${inter.variable} antialiased`}>
-        <div>{children}</div>
+        <div className="grid min-h-dvh grid-rows-[auto_1fr_auto] gap-16">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
