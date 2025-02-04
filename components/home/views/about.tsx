@@ -5,9 +5,9 @@ interface AboutProps {}
 export const About: FC<AboutProps> = () => {
   return (
     <section className="px-4">
-      <div className="max-w-7xl mx-auto w-full flex flex-col gap-10">
-        <div className="flex flex-col gap-6">
-          <h2 className="text-preset2-mobile text-custom-neutral-900">
+      <div className="max-w-3xl lg:max-w-[1170px] mx-auto w-full flex flex-col gap-10 lg:gap-20 lg:flex-row lg:items-center">
+        <div className="flex flex-col gap-6 lg:max-w-[530px]">
+          <h2 className="text-preset2-mobile text-custom-neutral-900 sm:text-preset2">
             Not your average book{" "}
             <span className="relative">
               club
@@ -26,10 +26,21 @@ export const About: FC<AboutProps> = () => {
             applications.
           </p>
         </div>
-        <div className="rounded-[12px] overflow-hidden">
+        <div className="rounded-[12px] overflow-hidden lg:max-w-[560px]">
           <img
             src="/image-not-average-mobile.webp"
             alt="image-not-average-mobile"
+            className="sm:hidden"
+          />
+          <img
+            src="/image-not-average-tablet.webp"
+            alt="image-not-average-tablet"
+            className="hidden sm:block lg:hidden"
+          />
+          <img
+            src="/image-not-average-desktop.webp"
+            alt="image-not-average-desktop"
+            className="hidden lg:block"
           />
         </div>
       </div>

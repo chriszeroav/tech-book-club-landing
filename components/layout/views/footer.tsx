@@ -9,18 +9,18 @@ export const Footer: FC<FooterProps> = () => {
   return (
     <footer
       className={cn(
-        "pt-12 px-4 rounded-t-2xl",
+        "pt-12 rounded-t-2xl",
         "bg-[url('/pattern-dark-bg.svg')] bg-custom-neutral-900"
       )}
     >
-      <div className="max-w-7xl mx-auto w-full flex flex-col gap-16">
-        <div className="flex flex-col gap-10">
-          <h2 className="text-custom-neutral-100 text-preset2-mobile">
+      <div className="max-w-3xl mx-auto w-full flex flex-col gap-16">
+        <div className="flex flex-col gap-10 max-w-[750px] mx-auto items-center px-4">
+          <h2 className="text-custom-neutral-100 text-center text-preset2-mobile sm:text-preset2">
             Ready to debug your reading list?
           </h2>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 max-w-fit">
             <Button variant="outline" className="h-16 rounded-lg">
-              <span className="text-preset6-mobile relative top-0.5">
+              <span className="text-preset6-mobile relative top-0.5 sm:text-preset6">
                 REVIEW MEMBERSHIP OPTIONS
               </span>
               <img
@@ -46,8 +46,8 @@ export const Footer: FC<FooterProps> = () => {
         </div>
         <div
           className={cn(
-            "flex flex-col gap-4 items-center",
-            "py-6 px-8 border-t",
+            "flex flex-col gap-4 items-center sm:flex-row sm:justify-between",
+            "py-6 px-4 border-t",
             "border-custom-neutral-700"
           )}
         >

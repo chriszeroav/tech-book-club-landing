@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Button } from "@/components/ui";
 import { OptionItem } from "@/components/app";
 
 interface OptionsProps {}
@@ -7,11 +6,11 @@ interface OptionsProps {}
 export const Options: FC<OptionsProps> = () => {
   return (
     <section className="px-4">
-      <div className="max-w-7xl mx-auto w-full flex flex-col gap-6">
-        <h2 className="text-preset2-mobile text-custom-neutral-900">
+      <div className="max-w-3xl mx-auto w-full flex flex-col gap-6">
+        <h2 className="text-preset2-mobile text-custom-neutral-900 sm:text-preset2">
           Membership options
         </h2>
-        <div className="grid gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           <OptionItem
             title="Starter"
             price={19}

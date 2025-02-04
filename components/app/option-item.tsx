@@ -49,7 +49,7 @@ export const OptionItem: FC<OptionItemProps> = ({
                   src="/icon-check.svg"
                   alt="icon-check"
                 />
-                <span className="text-preset-5 text-custom-neutral-700">
+                <span className="text-preset5 text-custom-neutral-700">
                   {item}
                 </span>
               </li>

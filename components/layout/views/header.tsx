@@ -7,16 +7,16 @@ interface HeaderProps {}
 export const Header: FC<HeaderProps> = () => {
   return (
     <header className="bg-[url('/pattern-light-bg.svg')] bg-custom-neutral-100 pt-6 pb-20 px-4">
-      <div className="max-w-7xl mx-auto w-full flex flex-col gap-12">
+      <div className="max-w-3xl lg:max-w-[1170px] mx-auto w-full flex flex-col gap-12">
         <img
           src="/logo.svg"
           className="w-[192.86px] h-[36px] object-contain"
           alt="Tech book club"
         />
-        <section className="flex flex-col gap-16">
-          <div className="flex flex-col gap-8">
+        <section className="flex flex-col gap-16 lg:flex-row lg:items-center">
+          <div className="flex flex-col gap-8 lg:max-w-[570px]">
             <div className="flex flex-col gap-6">
-              <h1 className="text-preset1-mobile bg-text-gradient bg-clip-text text-transparent">
+              <h1 className="text-preset1-mobile bg-text-gradient bg-clip-text text-transparent sm:text-preset1">
                 Join the ultimate tech book club
               </h1>
               <p className="text-preset5 text-custom-neutral-700">
@@ -26,8 +26,8 @@ export const Header: FC<HeaderProps> = () => {
               </p>
             </div>
             <div className="flex flex-col gap-5">
-              <Button className="h-16">
-                <span className="text-preset6-mobile relative top-0.5">
+              <Button className="h-16 max-w-[380px]">
+                <span className="text-preset6-mobile relative top-0.5 sm:text-preset6">
                   REVIEW MEMBERSHIP OPTIONS
                 </span>
                 <img
@@ -51,8 +51,22 @@ export const Header: FC<HeaderProps> = () => {
               </div>
             </div>
           </div>
-          <div className="rounded-[5px] overflow-hidden">
-            <img src="/image-hero-mobile.webp" alt="" />
+          <div className="rounded-[5px] overflow-hidden lg:max-w-[540px]">
+            <img
+              src="/image-hero-mobile.webp"
+              className="sm:hidden"
+              alt="image-hero-mobile"
+            />
+            <img
+              src="/image-hero-tablet.webp"
+              alt="image-hero-tablet"
+              className="hidden sm:block lg:hidden"
+            />
+            <img
+              src="/image-hero-desktop.webp"
+              alt="image-hero-desktop"
+              className="hidden lg:block"
+            />
           </div>
         </section>
       </div>

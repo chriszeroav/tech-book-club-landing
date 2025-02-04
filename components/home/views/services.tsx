@@ -12,12 +12,12 @@ export const Services: FC<ServicesProps> = () => {
 
   return (
     <section className="px-4">
-      <div className="max-w-7xl mx-auto w-full flex flex-col gap-10">
-        <div className="flex flex-col gap-6">
-          <h2 className="text-preset2-mobile text-custom-neutral-900">
+      <div className="max-w-3xl lg:max-w-[1170px] mx-auto w-full flex flex-col gap-10 lg:gap-20 lg:flex-row-reverse lg:items-center">
+        <div className="flex flex-col gap-6 lg:gap-9">
+          <h2 className="text-preset2-mobile text-balance text-custom-neutral-900 sm:text-preset2">
             Read together, grow together
           </h2>
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 lg:gap-6 lg:max-w-md">
             {services.map((item, index) => (
               <li key={index} className="flex items-center gap-3">
                 <img
@@ -25,17 +25,28 @@ export const Services: FC<ServicesProps> = () => {
                   src="/icon-check.svg"
                   alt="icon-check"
                 />
-                <span className="text-preset-5 text-custom-neutral-700">
+                <span className="text-preset5 text-custom-neutral-700">
                   {item}
                 </span>
               </li>
             ))}
           </ul>
         </div>
-        <div className="rounded-[12px] overflow-hidden">
+        <div className="rounded-[12px] overflow-hidden lg:max-w-[560px]">
           <img
             src="/image-read-together-mobile.webp"
             alt="image-read-together-mobile"
+            className="sm:hidden"
+          />
+          <img
+            src="/image-read-together-tablet.webp"
+            alt="image-read-together-tablet"
+            className="hidden sm:block lg:hidden"
+          />
+          <img
+            src="/image-read-together-desktop.webp"
+            alt="image-read-together-desktop"
+            className="hidden lg:block"
           />
         </div>
       </div>
