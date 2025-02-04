@@ -13,7 +13,7 @@ export const Footer: FC<FooterProps> = () => {
         "bg-[url('/pattern-dark-bg.svg')] bg-custom-neutral-900"
       )}
     >
-      <div className="max-w-3xl mx-auto w-full flex flex-col gap-16">
+      <div className="max-w-3xl lg:max-w-[1170px] mx-auto w-full flex flex-col gap-16">
         <div className="flex flex-col gap-10 max-w-[750px] mx-auto items-center px-4">
           <h2 className="text-custom-neutral-100 text-center text-preset2-mobile sm:text-preset2">
             Ready to debug your reading list?

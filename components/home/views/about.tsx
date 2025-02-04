@@ -26,21 +26,26 @@ export const About: FC<AboutProps> = () => {
             applications.
           </p>
         </div>
-        <div className="rounded-[12px] overflow-hidden lg:max-w-[560px]">
+        <div className=" lg:max-w-[560px] relative">
           <img
             src="/image-not-average-mobile.webp"
             alt="image-not-average-mobile"
-            className="sm:hidden"
+            className="sm:hidden rounded-[12px]"
           />
           <img
             src="/image-not-average-tablet.webp"
             alt="image-not-average-tablet"
-            className="hidden sm:block lg:hidden"
+            className="hidden sm:block lg:hidden rounded-[12px]"
           />
           <img
             src="/image-not-average-desktop.webp"
             alt="image-not-average-desktop"
-            className="hidden lg:block"
+            className="hidden lg:block rounded-[12px]"
+          />
+          <img
+            src="/logos-tech.svg"
+            alt="logos-tech"
+            className="hidden lg:block lg:absolute bottom-5 -left-20"
           />
         </div>
       </div>

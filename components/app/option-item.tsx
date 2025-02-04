@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { ComponentProps, FC } from "react";
 import { Button } from "../ui";
 import { cn } from "@/lib/utils";
 
-interface OptionItemProps {
+interface OptionItemProps extends ComponentProps<"div"> {
   relevant?: boolean;
   title: string;
   price: string | number;
@@ -18,6 +18,7 @@ export const OptionItem: FC<OptionItemProps> = ({
   period,
   advantages,
   buttonText = "SUBSCRIBE NOW",
+  className,
 }) => {
   const finalPrice = typeof price === "number" ? `$${price}` : price;
 
@@ -26,7 +27,8 @@ export const OptionItem: FC<OptionItemProps> = ({
       className={cn(
         "relative overflow-hidden",
         relevant ? "bg-custom-neutral-100" : "bg-custom-neutral-0",
-        "rounded-lg border border-custom-neutral-200 p-6"
+        "rounded-lg border border-custom-neutral-200 p-6",
+        className
       )}
     >
       <div className="flex flex-col gap-8 relative z-10">
