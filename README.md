@@ -2,6 +2,8 @@
 
 Una landing page moderna creada con fines de práctica y aprendizaje, enfocada en tecnologías web actuales y mejores prácticas de desarrollo.
 
+![tech-book](https://github.com/user-attachments/assets/ac460907-fda5-4920-ab7d-66ba16caef87)
+
 ## 🎯 Propósito
 
 Este proyecto fue desarrollado como una práctica para:
