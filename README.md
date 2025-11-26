@@ -1,10 +1,76 @@
-## The challenge
+# Tech Book Club Landing Page
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+Una landing page moderna creada con fines de práctica y aprendizaje, enfocada en tecnologías web actuales y mejores prácticas de desarrollo.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## 🎯 Propósito
 
-Your users should be able to:
+Este proyecto fue desarrollado como una práctica para:
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- Experimentar con **Tailwind CSS v4**
+- Implementar principios de **accesibilidad web (a11y)**
+- Mejorar habilidades en diseño responsive
+- Aplicar mejores prácticas de React y Next.js
+- Trabajar con componentes reutilizables usando shadcn/ui
+
+## 🛠️ Tecnologías
+
+- **Next.js 15**
+- **React 19**
+- **Tailwind CSS v4**
+- **TypeScript**
+- **shadcn/ui**
+- **Lucide React**
+
+## 🚀 Características
+
+- ✅ Diseño completamente responsive
+- ✅ Estados de hover y focus en elementos interactivos
+- ✅ Optimizado para accesibilidad
+- ✅ Componentes reutilizables y mantenibles
+- ✅ Tipado con TypeScript
+- ✅ Animaciones suaves con tailwindcss-animate
+
+## 📦 Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/chriszeroav/tech-book-club-landing.git
+
+# Navegar al directorio
+cd tech-book-club-landing
+
+# Instalar dependencias
+pnpm install
+
+# Ejecutar en modo desarrollo
+pnpm dev
+```
+
+El proyecto estará disponible en [http://localhost:3000](http://localhost:3000)
+
+## 📜 Scripts Disponibles
+
+```bash
+pnpm dev      # Inicia el servidor de desarrollo
+pnpm build    # Crea el build de producción
+pnpm start    # Inicia el servidor de producción
+pnpm lint     # Ejecuta el linter
+```
+
+## 📁 Estructura del Proyecto
+
+```
+├── app/              # Rutas y layouts de Next.js
+├── components/       # Componentes React organizados por feature
+│   ├── app/         # Componentes específicos de la aplicación
+│   ├── home/        # Componentes de la página principal
+│   ├── layout/      # Header, Footer y otros layouts
+│   └── ui/          # Componentes UI base (shadcn)
+├── lib/             # Utilidades y helpers
+├── public/          # Archivos estáticos (imágenes, SVGs)
+└── ...              # Archivos de configuración
+```
+
+## 📝 Licencia
+
+Este proyecto es de código abierto y fue creado con fines educativos.
